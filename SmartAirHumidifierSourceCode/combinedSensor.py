@@ -27,10 +27,10 @@ dhtDevice = adafruit_dht.DHT22(board.D4)
 
 config = {
   # You can get all these info from the firebase website. It's associated with your account.
-  "apiKey": "AIzaSyAlX75Wolc_9HanzlN7Kl7lyQfxT3r60Q4",
-  "authDomain": "smartair-54180.firebaseapp.com",
-  "databaseURL": "https://smartair-54180-default-rtdb.firebaseio.com/",
-  "storageBucket": "smartair-54180.appspot.com"
+  "apiKey": "apiKey",
+  "authDomain": "authDomain.firebaseapp.com",
+  "databaseURL": "databaseURL.firebaseio.com/",
+  "storageBucket": "storageBucke.appspot.com"
 }
 user = None
 
@@ -39,8 +39,8 @@ def GetAuthorized(firebase):
     auth = firebase.auth()  # Get a reference to the auth service
     # authenticate a user
     try:
-        user = auth.sign_in_with_email_and_password("airsmart91@gmail.com",
-                                                    "123456")  # username and password of your account for database
+        user = auth.sign_in_with_email_and_password("username",
+                                                    "password")  # username and password of your account for database
         print(user)  # display the user information, if successful
     except:
         print("Not authorized")
