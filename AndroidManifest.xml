@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.smartair">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".Notif"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Help_sett"
+            android:label="@string/help_header"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Language_sett"
+            android:label="@string/language_header"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ForgetPassword"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Account_sett"
+            android:label="@string/account_header"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".SettActivity"
+            android:label="@string/action_settings"/>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Splash"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".SignInActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".SignUpActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".TutorialActivity"
+            android:label="@string/menu_tutorial"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".DeviceInformationActivity"
+            android:label="@string/menu_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+         <!-- <activity android:name=".HomeActivity" /> -->
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".ConnectActivity"
+            android:label="@string/menu_connect"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".HomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>
